@@ -132,18 +132,17 @@ for reason in reasons:
     st.write("•", reason)
 
 # ---------- Режим эксперимента ----------
-"""
-st.divider()
-st.subheader("🔬 Проверь сам")
-st.write("Подвигайте ползунки и посмотрите, как меняется шанс.")
 
-test_kp = st.slider("Индекс Kp", 0.0, 9.0, 3.0, 0.5)
-test_clouds = st.slider("Облачность, %", 0, 100, 10)
-test_dark = st.checkbox("На улице темно", value=True)
+#st.divider()
+#st.subheader("🔬 Проверь сам")
+#st.write("Подвигайте ползунки и посмотрите, как меняется шанс.")
 
-test_chance, test_reasons = count_chance(test_kp, test_clouds,
+#test_kp = st.slider("Индекс Kp", 0.0, 9.0, 3.0, 0.5)
+#test_clouds = st.slider("Облачность, %", 0, 100, 10)
+#test_dark = st.checkbox("На улице темно", value=True)
+
+#test_chance, test_reasons = count_chance(test_kp, test_clouds,
                                          0 if test_dark else 1, 12)
-st.metric("Шанс в эксперименте", f"{test_chance} %")
-"""
+#st.metric("Шанс в эксперименте", f"{test_chance} %")
 
 st.caption("Источники данных: Open-Meteo (погода) и NOAA SWPC (индекс Kp).")
