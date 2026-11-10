@@ -142,7 +142,7 @@ for reason in reasons:
 #test_dark = st.checkbox("На улице темно", value=True)
 
 #test_chance, test_reasons = count_chance(test_kp, test_clouds,
-                                         0 if test_dark else 1, 12)
+#                                         0 if test_dark else 1, 12)
 #st.metric("Шанс в эксперименте", f"{test_chance} %")
 
 st.caption("Источники данных: Open-Meteo (погода) и NOAA SWPC (индекс Kp).")
